@@ -77,5 +77,5 @@ int main(){
         cout << formatWord << endl;
     }
     while(count != 7);
-	
+	cout << endl;
 }
