@@ -1,8 +1,5 @@
-#include <iostream>
-#include <vector>
-#include <cmath>
+#include<bits/stdc++.h>
 using namespace std;
-
 int main() {
     int n,a[10005],sum = 0,odd = 0,Max = INT_MAX,Min = INT_MIN;
 	cin >> n;
