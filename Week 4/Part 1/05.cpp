@@ -1,30 +1,21 @@
-#include <iostream>
-#include <vector>
-#include <cmath>
+#include<bits/stdc++.h>
 using namespace std;
-
 int main() {
     int n;
     cin >> n;
-
-    vector<double> ps(n);
-    double sum = 0;
+    vector<float> ps(n);
+    float sum = 0;
     for (int i = 0; i < n; i++) {
         cin >> ps[i];
         sum += ps[i];
     }
-
-    double tb = sum / n;
-
-    double variance = 0;
+    float avr = sum / n;
+    float var = 0;
     for (int i = 0; i < n; i++) {
-        variance += pow(ps[i] - tb, 2);
+        var += pow(ps[i] - avr, 2);
     }
-    variance /= n;
-
-    cout << tb << endl;
-    cout << variance << endl;
-
+    var /= n;
+    cout << tb << " " << var;
     return 0;
 }
 
