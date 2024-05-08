@@ -1,17 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-	int n; c
+	int n,a[100005]; 
 	in >> n;
-	int a[n];
 	for(int i = 0; i < n; i++) cin >>a[i];
-	int ma = -1e9, mi =1e9;
-	int s = 0, t = 0;
+	int Max = INT_MIN, Min = INT_MAX;
+	int res = 0, t = 0;
 	for(int i = 0; i < n; i++){
-		ma =max(ma,a[i]);
-		mi=min(mi,a[i]);
-		if(a[i] % 2 == 0) s++;
+		Max = max(Max ,a[i]);
+		Min = min(Min ,a[i]);
+		if(a[i] % 2 == 0) res++;
 		else t++;
 	}
-	cout << ma << mi << s << t;
+	cout << Max << Min << res << t;
 }
